@@ -1,0 +1,128 @@
+{
+    "peer_then_self": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            },
+            {
+                "name": "self-assessment"
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "peer_only": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "self_only": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "self-assessment"
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "staff_only_required": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "staff-assessment",
+                "required": true
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "staff_optional_after_peer": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            },
+            {
+                "name": "staff-assessment",
+                "required": false
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "self_before_peer": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "self-assessment"
+            },
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "student_training_self_peer_staff": {
+        "valid": true,
+        "assessments": [
+            {
+                "name": "student-training",
+                "examples": [
+                    {
+                        "answer": "foo"
+                    },
+                    {
+                        "answer": "bar"
+                    }
+                ]
+            },
+            {
+                "name": "self-assessment"
+            },
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            },
+            {
+                "name": "staff-assessment",
+                "required": true
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    },
+    "peer_then_peer": {
+        "valid": false,
+        "assessments": [
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            },
+            {
+                "name": "peer-assessment",
+                "must_grade": 5,
+                "must_be_graded_by": 3
+            }
+        ],
+        "current_assessments": null,
+        "is_released": false
+    }
+}

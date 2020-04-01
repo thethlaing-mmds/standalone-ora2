@@ -1,0 +1,10 @@
+{
+    "waiting_for_peer": {
+        "waiting_for_peer": true,
+        "expected_response": "some assessments still need to be done on your response"
+    },
+    "not_waiting": {
+        "waiting_for_peer": false,
+        "expected_response": "your grade:"
+    }
+}

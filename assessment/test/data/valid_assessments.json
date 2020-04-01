@@ -1,0 +1,22 @@
+{
+    "unicode_evaluation": {
+        "overall_feedback": "这是中国",
+        "criterion_feedback": {},
+        "options_selected": {
+            "secret": "yes",
+            "ⓢⓐⓕⓔ": "no",
+            "giveup": "reluctant",
+            "singing": "no"
+        }
+    },
+    "basic_evaluation": {
+        "overall_feedback": "Your submission was thrilling.",
+        "criterion_feedback": {},
+        "options_selected": {
+            "secret": "yes",
+            "ⓢⓐⓕⓔ": "no",
+            "giveup": "reluctant",
+            "singing": "no"
+        }
+    }
+}

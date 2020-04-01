@@ -1,0 +1,88 @@
+{
+    "student_training_one_example": {
+        "xml": [
+            "<examples>",
+            "<example>",
+            "<answer>ẗëṡẗ äṅṡẅëṛ</answer>",
+            "<select criterion=\"Test criterion\" option=\"Yes\" />",
+            "</example>",
+            "</examples>"
+        ],
+        "examples": [
+            {
+                "answer": {
+                    "parts": [
+                        {"text": "ẗëṡẗ äṅṡẅëṛ"}
+                    ]
+                },
+                "options_selected": [
+                    {
+                        "criterion": "Test criterion",
+                        "option": "Yes"
+                    }
+                ]
+            }
+        ]
+    },
+
+    "student_training_multiple_examples": {
+        "xml": [
+            "<examples>",
+            "<example>",
+            "<answer>",
+            "<part>ẗëṡẗ äṅṡẅëṛ 1</part>",
+            "<part>ẗëṡẗ äṅṡẅëṛ 2</part>",
+            "</answer>",
+            "<select criterion=\"Test criterion\" option=\"Yes\" />",
+            "<select criterion=\"Another test criterion\" option=\"No\" />",
+            "</example>",
+            "<example>",
+            "<answer>",
+            "<part>äṅöẗḧëṛ ẗëṡẗ äṅṡẅëṛ 1</part>",
+            "<part>äṅöẗḧëṛ ẗëṡẗ äṅṡẅëṛ 2</part>",
+            "</answer>",
+            "<select criterion=\"Another test criterion\" option=\"Yes\" />",
+            "<select criterion=\"Test criterion\" option=\"No\" />",
+            "</example>",
+            "</examples>"
+        ],
+        "examples": [
+            {
+                "answer": {
+                    "parts": [
+                        {"text": "ẗëṡẗ äṅṡẅëṛ 1"},
+                        {"text": "ẗëṡẗ äṅṡẅëṛ 2"}
+                    ]
+                },
+                "options_selected": [
+                    {
+                        "criterion": "Test criterion",
+                        "option": "Yes"
+                    },
+                    {
+                        "criterion": "Another test criterion",
+                        "option": "No"
+                    }
+                ]
+            },
+            {
+                "answer": {
+                    "parts": [
+                        {"text": "äṅöẗḧëṛ ẗëṡẗ äṅṡẅëṛ 1"},
+                        {"text": "äṅöẗḧëṛ ẗëṡẗ äṅṡẅëṛ 2"}
+                    ]
+                },
+                "options_selected": [
+                    {
+                        "criterion": "Another test criterion",
+                        "option": "Yes"
+                    },
+                    {
+                        "criterion": "Test criterion",
+                        "option": "No"
+                    }
+                ]
+            }
+        ]
+    }
+}
