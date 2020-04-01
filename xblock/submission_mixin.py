@@ -238,6 +238,7 @@ class SubmissionMixin(object):
         failure_response = {'success': False, 'msg': self._(u"Files descriptions were not submitted.")}
         failure_response1 = {'success': False, 'msg': self._(u"Files descriptions is not included.")}
         failure_response2 = {'success': False, 'msg': self._(u"Files descriptions is not list.")}
+        failure_response3 = {'success': False, 'msg': self._(u"Three meta doesn't included.")}
         
         if 'fileMetadata' not in data:
             return failure_response1
@@ -259,7 +260,7 @@ class SubmissionMixin(object):
                 isinstance(new_upload['name'], six.string_types),
                 isinstance(new_upload['size'], six.integer_types),
             ]):
-                return failure_response
+                return failure_response3
 
         try:
             self.file_manager.append_uploads(*file_data)
