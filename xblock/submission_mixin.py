@@ -236,12 +236,14 @@ class SubmissionMixin(object):
             dict: Contains a bool 'success' and unicode string 'msg'.
         """
         failure_response = {'success': False, 'msg': self._(u"Files descriptions were not submitted.")}
-
+        failure_response1 = {'success': False, 'msg': self._(u"Files descriptions is not included.")}
+        failure_response2 = {'success': False, 'msg': self._(u"Files descriptions is not list.")}
+        
         if 'fileMetadata' not in data:
-            return failure_response
+            return failure_response1
 
         if not isinstance(data['fileMetadata'], list):
-            return failure_response
+            return failure_response2
 
         file_data = [
             {
